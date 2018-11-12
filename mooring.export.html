@@ -54,13 +54,19 @@
         <div class="col-md-12 text-left">
           <h3 align="left"style="margin-left:5%">General Inputs</h3>
           <p align="left"><strong>\(w  = \) Mooring line density (kg/m):</strong> Weight per unit along the chain.</p>
+<<<<<<< HEAD
           <p align="left"><strong>\(l = \) Mooring line length (m):</strong> Total length of the chain including hanging line and horizontal line.</p>
           <p align="left"><strong>\(z = \) Depth (m):</strong> Vertical distance of hull attachment on the ship from the seabed, also corresponding to sea depth.</p>
+=======
+          <p align="left"><strong>\(l = \) Mooring line length (m):</strong> Total lenth of the chain including hanging line and horizontal line.</p>
+          <p align="left"><strong>\(z = \) Depth (m):</strong> Vertical distance of hull attachment on the ship, also corresponding to sea depth.</p>
+>>>>>>> 4ed6aacd3076409d1f67111c91f805e250081120
           <p align="left"><strong>\(H = \) Horizontal force (kgf):</strong> Horizontal component of the tension, which is uniform along the chain.</p>
           <br>
           <h3 align="left"style="margin-left:5%">Results</h3>
           <p align="left"><strong>\(d = \) Attraction radius (m):</strong> Horizontal distance from the ship to the attraction point. This distace represents the radius which the ship is allowed to discribe for whatever force direction.</p>
           <p align="left"><strong>\(w = \) Suspended mooring line length  (m):</strong> Lenght of the mooring line between the point of contact of seabed and hull attachment point.</p>
+<<<<<<< HEAD
           <p align="left"><strong>\(T_{max} = \) Maximum traction force (kgf):</strong> Maximum force in all line, the point where the maximum force occurs is the same of hull attachment point for this model.</p>
           <p align="left"><strong>\(V_{max} = \) Maximum vertical force (kgf):</strong> Maximum vertical force applied due gravitational force, the point where the maximum vertical force occurs is the same of hull attachment point for this model.</p>
           <p align="left"><strong>\(\theta = \) Angle in ship attraction point (°):</strong> Angle between the tangent to the chain and the x-axis at hull attachment point.</p>
@@ -82,13 +88,37 @@
           </p>
           <h3 align="left"style="margin-left:5%">Formulation</h3>
           <p>The \(T_{max}\) can be calculated by the sum of horizontal and vertical forces on the hooking point:</p>
+=======
+          <p align="left"><strong>\(T_{max} = \) Maximum traction force (kgf):</strong> Maximum force in all line, the point where the maximum force occurs is the same of hull attachment point.</p>
+          <p align="left"><strong>\(V_{max} = \) Maximum vertical force (kgf):</strong> Maximum vertical force applied due gravitational force, the point where the maximum vertical force occurs is the same of hull attachment point.</p>
+          <p align="left"><strong>\(\theta = \) Angle in ship attraction point (°):</strong> Angle between the tangent to the chain and the x-axis at hull attachment point.</p>
+          <br>
+          <h3 align="left"style="margin-left:5%">Assumption</h3>
+          <ul>
+            <li>the upper extremity of the line is attached to a point at the waterline level of a ship platform hull (attachment point);</li>
+            <li>the lower extremity of the line is attached to an anchor;</li>
+            <li>\(x_{s}\) is horizontal, pointing to the right;</li>
+            <li>\(y_{s}\) is vertical, pointing upwards;</li>
+            <li>the line is completely contained in the \((x,y)\) plane;</li>
+            <li>the orign of the system is at the point where hanging line first achieves zero tangent from the hull to the anchor;</li>
+            <li>only traction forces are applied to the line, whichs act along the tangent. The line does not resist compression nor shear forces or bending moments;</li>
+            <li>No elongation of the line;</li>
+            <li>Hidrostatics forces on line irrelevant in front of weight and enviromental forces;</li>
+            <li>Static equilibrium only.</li>
+          </ul>
+          <h3 align="left"style="margin-left:5%">Formulation</h3>
+>>>>>>> 4ed6aacd3076409d1f67111c91f805e250081120
           <p> $$T_{max} = H + w.z $$ </p>
           <p>Let \(a\) be the horizontal force weight ratio in \((m)\):</p>
           <p> $$a = {H \over w}  $$</p>
           <p> $$s = \sqrt{z.(z+2a)} $$</p>
           <p> $$V_{max} = w.s $$ </p>
           <p> $$\theta = \bigg({180 \over \pi}\bigg)\arctan{\bigg({s \over a} \bigg)} $$ </p>
+<<<<<<< HEAD
           <p>Let \((x_s,y_s)\) be the ordinate point of suspended mooring line: $$y_s = a\text{cosh}\bigg({x_s \over a}\bigg).$$</p>
+=======
+          <p>Let \((x_s,y_s)\) be the ordinate point of suspended mooring line: $$y_s = a.\text{cosh}\bigg({x_s \over a}\bigg).$$</p>
+>>>>>>> 4ed6aacd3076409d1f67111c91f805e250081120
         </div>
       </div>
     </div>
@@ -170,7 +200,12 @@
           });
     };
 
+<<<<<<< HEAD
 
+=======
+      //Activates the hide button
+      
+>>>>>>> 4ed6aacd3076409d1f67111c91f805e250081120
       function hide() {
               var div = document.getElementById('hide');
               if (div.style.display == 'none') {
