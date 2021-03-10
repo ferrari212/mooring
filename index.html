@@ -23,7 +23,7 @@
             &nbsp; Catenary representation of a hanging mooring line between reference
             and transiction points. For further explanation regards
             hypotheses, assumption, and formulation  please consult:
-            Bernardo, A. (1911). Mooring Lines. In Applied Topics in Marine
+            Bernardo, A. (2016). Mooring Lines. In Applied Topics in Marine
             Hydrodynamics (Chapter 7). São Paulo, SP: EPUSP.
           </p>
         </div>
@@ -137,11 +137,11 @@
 
           // Plot important results
           $("#results").empty();
-          $('<div"> Attraction radius = ' + (l-s+x).toFixed(2) + ' m;</div><br>').appendTo('#results');
+          $('<div"> Mooring radius = ' + (l-s+x).toFixed(2) + ' m;</div><br>').appendTo('#results');
           $('<div"> Suspended mooring line length = ' + s.toFixed(2) + ' m;</div><br>').appendTo('#results');
           $('<div"> Maximum traction force = ' + tractionForce + ' kgf;</div><br>').appendTo('#results');
           $('<div"> Maximum vertical force = ' + verticalForce.toFixed(2) + ' kgf;</div><br>').appendTo('#results');
-          $('<div"> Angle in ship attraction point = ' + angle.toFixed(1) + '°;</div><br>').appendTo('#results');
+          $('<div"> Angle in mooring deck point = ' + angle.toFixed(1) + '°;</div><br>').appendTo('#results');
 
 
         // introduce to plot
